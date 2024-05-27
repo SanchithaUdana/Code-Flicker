@@ -1,4 +1,4 @@
-# Install script for directory: /Users/kasunisuru/Documents/Code-Flicker
+# Install script for directory: /Users/apple/Documents/My Document/University/Programming II/assignment group/Code Flicker
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/kasunisuru/Documents/Code-Flicker/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/apple/Documents/My Document/University/Programming II/assignment group/Code Flicker/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
