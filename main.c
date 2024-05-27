@@ -10,6 +10,17 @@ typedef struct {
     int top;
 } Stack;
 
+void initStack(Stack *s) {
+    s->top = -1;
+}
+
+int isStackEmpty(Stack *s) {
+    return s->top == -1;
+}
+
+int isStackFull(Stack *s) {
+    return s->top == MAX_STACK_SIZE - 1;
+}
 
 
 
