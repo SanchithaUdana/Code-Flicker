@@ -4,3 +4,4 @@ cmake-build-debug/Testing/Temporary/LastTest.log
 /cmake-build-debug
 *.log
 *.log
+*.log
