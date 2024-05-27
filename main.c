@@ -1,3 +1,5 @@
+// Reverse Polish Calculator
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
