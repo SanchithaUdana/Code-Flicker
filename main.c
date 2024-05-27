@@ -1,4 +1,5 @@
 // Reverse Polish Calculator
+// Programming 2 Group Assignment
 
 #include <stdio.h>
 #include <stdlib.h>
