@@ -27,7 +27,8 @@ int isStackFull(Stack *s) {
 }
 
 void push(Stack * s,double value ) {
-
+    if(isStackFull(s)){
+    }
 }
 
 
