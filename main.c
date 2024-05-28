@@ -26,6 +26,13 @@ int isStackFull(Stack *s) {
     return s->top == MAX_STACK_SIZE - 1;
 }
 
+void push(Stack * s,double value ) {
+    if(isStackFull(s)){
+        fprintf(stderr,"Stack overflow\n");
+        exit(EXIT_FAILURE);
+    }
+    s->stack[++s->top] = value;
+}
 
 
 int main() {
