@@ -28,7 +28,7 @@ int isStackFull(Stack *s) {
 
 void push(Stack * s,double value ) {
     if(isStackFull(s)){
-        fprintf(stderr,"Hello World\n");
+        fprintf(stderr,"Stack overflow\n");
         exit(EXIT_FAILURE);
     }
     s->stack[++s->top] = value;
