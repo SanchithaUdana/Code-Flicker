@@ -27,9 +27,36 @@ int isStackFull(Stack *s) {
 }
 
 
+//Anushan & Mili
 double rpnCalculator(const char *expression) {
     Stack stack;
     initStack(&stack);
+    const char *token = strtok((char *)expression, " ");
+    while (token != NULL) {
+        if (isdigit(token[0]) || (token[0] == '-' && isdigit(token[1]))) {
+            push(&stack, atof(token));
+        } else if (strlen(token) == 1) {
+            double b = pop(&stack);
+            double a = pop(&stack);
+            switch (token[0]) {
+                case '+': push(&stack, a + b); break;
+                case '-': push(&stack, a - b); break;
+                case '*': push(&stack, a * b); break;
+                case '/':
+                    if (b == 0) {
+                        fprintf(stderr, "Division by zero\n");
+                        exit(EXIT_FAILURE);
+                    }
+                    push(&stack, a / b);
+                    break;
+                default:
+                    fprintf(stderr, "Unknown operator: %s\n", token);
+                    exit(EXIT_FAILURE);
+            }
+        } else {
+            fprintf(stderr, "Invalid token: %s\n", token);
+            exit(EXIT_FAILURE);
+        }
 }
 
 int main() {
