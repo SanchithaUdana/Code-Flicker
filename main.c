@@ -27,7 +27,11 @@ int isStackFull(Stack *s) {
 }
 
 
-// Anushan
+double rpnCalculator(const char *expression) {
+    Stack stack;
+    initStack(&stack);
+}
+
 int main() {
     printf("Hello, World!\n");
     return 0;
