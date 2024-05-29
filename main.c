@@ -34,6 +34,7 @@ void push(Stack * s,double value ) {
     s->stack[++s->top] = value;
 }
 
+<<<<<<< HEAD
 //Anushan & Mili
 double rpnCalculator(const char *expression) {
     Stack stack;
@@ -70,6 +71,8 @@ double rpnCalculator(const char *expression) {
     }
 
 }
+=======
+>>>>>>> parent of 6cc0eca (Merge pull request #6 from SanchithaUdana/anushan)
 
 int main() {
     printf("Hello, World!\n");
