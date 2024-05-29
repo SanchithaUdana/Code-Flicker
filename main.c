@@ -70,9 +70,9 @@ double rpnCalculator(const char *expression) {
             exit(EXIT_FAILURE);
         }
 
-        token = strtok(NULL, "");
+        token = Stroke(NULL, "");
     }
-    if(stack.top != 0){
+    if(stack.!=0){
         fprintf(stderr,"Invalid RPN expression\n");
         exit(EXIT_FAILURE);
     }
