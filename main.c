@@ -37,23 +37,17 @@ void push(Stack * s,double value ) {
 double rpnCalculator(const char *expression) {
     Stack stack;
     initStack(&stack);
-    const char *token = strtok((char *) expression, " ");
+    const char *token = strtok((char *)expression, " ");
     while (token != NULL) {
         if (isdigit(token[0]) || (token[0] == '-' && isdigit(token[1]))) {
             push(&stack, atof(token));
         } else if (strlen(token) == 1) {
-            double b = pop(&stack); // pop function is must define as name pop
-            double a = pop(&stack); // pop function is must define as name pop
+            double b = pop(&stack);
+            double a = pop(&stack);
             switch (token[0]) {
-                case '+':
-                    push(&stack, a + b);
-                    break;
-                case '-':
-                    push(&stack, a - b);
-                    break;
-                case '*':
-                    push(&stack, a * b);
-                    break;
+                case '+': push(&stack, a + b); break;
+                case '-': push(&stack, a - b); break;
+                case '*': push(&stack, a * b); break;
                 case '/':
                     if (b == 0) {
                         fprintf(stderr, "Division by zero\n");
@@ -69,6 +63,7 @@ double rpnCalculator(const char *expression) {
             fprintf(stderr, "Invalid token: %s\n", token);
             exit(EXIT_FAILURE);
         }
+<<<<<<< HEAD
 
         token = Stroke(NULL, "");
     }
@@ -77,6 +72,8 @@ double rpnCalculator(const char *expression) {
         exit(EXIT_FAILURE);
     }
     return pop(&stack);
+=======
+>>>>>>> parent of 1a04d86 (assume pop function is defined. that define by dinuka)
 }
 
 int main() {
