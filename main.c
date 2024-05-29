@@ -76,6 +76,7 @@ double rpnCalculator(const char *expression) {
         fprintf(stderr,"Invalid RPN expression\n");
         exit(EXIT_FAILURE);
     }
+    return pop(&stack);
 }
 
 int main() {
