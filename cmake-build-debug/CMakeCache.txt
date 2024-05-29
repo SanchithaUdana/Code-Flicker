@@ -292,7 +292,7 @@ CMAKE_EXTRA_GENERATOR_C_SYSTEM_DEFINED_MACROS:INTERNAL=__STDC__;1;__STDC_VERSION
 //C compiler system include directories
 CMAKE_EXTRA_GENERATOR_C_SYSTEM_INCLUDE_DIRS:INTERNAL=C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include;C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
 //Name of generator.
-CMAKE_GENERATOR:INTERNAL=MinGW Makefiles
+CMAKE_GENERATOR:INTERNAL=
 //Generator instance identifier.
 CMAKE_GENERATOR_INSTANCE:INTERNAL=
 //Name of generator platform.
