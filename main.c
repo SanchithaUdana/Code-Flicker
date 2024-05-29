@@ -69,6 +69,12 @@ double rpnCalculator(const char *expression) {
             fprintf(stderr, "Invalid token: %s\n", token);
             exit(EXIT_FAILURE);
         }
+
+        token = Stroke(NULL, ""):
+    }
+    if(stak.!=O){
+        fprintf(stderr,"Invalid RPN expression\n");
+        exit(EXIT_FAILURE);
     }
 }
 
