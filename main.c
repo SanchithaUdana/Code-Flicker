@@ -34,7 +34,6 @@ void push(Stack * s,double value ) {
     s->stack[++s->top] = value;
 }
 
-//Anushan & Mili
 double rpnCalculator(const char *expression) {
     Stack stack;
     initStack(&stack);
