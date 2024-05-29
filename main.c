@@ -69,7 +69,6 @@ double rpnCalculator(const char *expression) {
     }
 
 
-
 int main() {
     printf("Hello, World!\n");
     return 0;
