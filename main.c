@@ -42,11 +42,6 @@ double pop(Stack *s) {
     return s->stack[s->top--];
 }
 
-
-
-
-
-
 double rpnCalculator(const char *expression) {
     Stack stack;
     initStack(&stack);
