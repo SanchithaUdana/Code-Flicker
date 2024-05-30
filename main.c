@@ -37,6 +37,7 @@ void push(Stack * s,double value ) {
 double pop(Stack *s) {
     if (isStackEmpty(s)) {
         fprintf(stderr, "Not Suitable Operations\n");
+        exit(EXIT_FAILURE);
     }
 }
 
