@@ -39,6 +39,7 @@ double pop(Stack *s) {
         fprintf(stderr, "Not Suitable Operations\n");
         exit(EXIT_FAILURE);
     }
+    return s->stack[s->top--];
 }
 
 
