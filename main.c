@@ -34,6 +34,15 @@ void push(Stack * s,double value ) {
     s->stack[++s->top] = value;
 }
 
+double pop(Stack *s) {
+    
+}
+
+
+
+
+
+
 double rpnCalculator(const char *expression) {
     Stack stack;
     initStack(&stack);
