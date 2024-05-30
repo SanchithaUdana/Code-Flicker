@@ -34,6 +34,14 @@ void push(Stack * s,double value ) {
     s->stack[++s->top] = value;
 }
 
+double pop(Stack *s) {
+    if (isStackEmpty(s)) {
+        fprintf(stderr, "Not Suitable Operations\n");
+        exit(EXIT_FAILURE);
+    }
+    return s->stack[s->top--];
+}
+
 double rpnCalculator(const char *expression) {
     Stack stack;
     initStack(&stack);
