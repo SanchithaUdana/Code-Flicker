@@ -89,7 +89,10 @@ int main() {
         expression[strcspn(expression, "\n")] = 0;
         double result = rpnCalculator(expression);
         printf("Result: %lf\n", result);
-
     }
+    else {
+        fprintf(stderr, "Error reading input\n");
+    }
+
 
 }
