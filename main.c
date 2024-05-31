@@ -83,6 +83,11 @@ double rpnCalculator(const char *expression) {
 // Dependency completed
 
 int main() {
-    printf("Hello, World!\n");
-    return 0;
+    char expression[256];
+    printf("Enter an RPN expression: ");
+    if (fgets(expression, sizeof(expression), stdin) != NULL) {
+        expression[strcspn(expression, "\n")] = 0;
+
+    }
+
 }
