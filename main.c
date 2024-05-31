@@ -94,5 +94,6 @@ int main() {
         fprintf(stderr, "Error reading input\n");
     }
 
+    return 0;
 
 }
