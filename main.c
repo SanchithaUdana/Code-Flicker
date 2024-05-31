@@ -87,6 +87,8 @@ int main() {
     printf("Enter an RPN expression: ");
     if (fgets(expression, sizeof(expression), stdin) != NULL) {
         expression[strcspn(expression, "\n")] = 0;
+        double result = rpnCalculator(expression);
+        printf("Result: %lf\n", result);
 
     }
 
